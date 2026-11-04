@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مكتب الميزان للمحاماة والاستشارات القانونية</title>
+<meta name="description" content="مكتب الميزان للمحاماة: قضايا جنائية ومدنية وتجارية وأسرية، تأسيس شركات، صياغة عقود، واستشارات قانونية بسرية تامة.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0a1628;--navy2:#0f2038;--black:#05080f;--gold:#c9a24b;--gold2:#e6c778;
+--bg:#faf8f3;--surface:#fff;--text:#1a2233;--muted:#5d6678;--line:#e6dfcc;--gold-t:#8a6a1f;
+--serif:"Amiri","Traditional Arabic",Georgia,serif;--sans:"Tajawal","Segoe UI",Tahoma,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1628;--surface:#0f2038;--text:#f3efe4;--muted:#a9b2c3;--line:#223452;--gold-t:#e6c778;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0a1628;--surface:#0f2038;--text:#f3efe4;--muted:#a9b2c3;--line:#223452;--gold-t:#e6c778;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(78px + env(safe-area-inset-top,0px))}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.9;font-size:17px;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--navy);z-index:60}
+img,svg{max-width:100%}a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+section{padding:110px 0}
+h1,h2,h3{font-family:var(--serif);line-height:1.35;font-weight:700}
+h2{font-size:clamp(2rem,4vw,2.9rem);margin-bottom:18px}
+.lead{color:var(--muted);max-width:60ch}
+.head{margin-bottom:56px}.head::after{content:"";display:block;width:64px;height:2px;background:var(--gold);margin-top:22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 34px;border:1px solid var(--gold);font:500 1rem var(--sans);cursor:pointer;transition:background .3s,color .3s,transform .3s}
+.btn.gold{background:var(--gold);color:var(--black)}.btn.gold:hover{background:var(--gold2);transform:translateY(-2px)}
+.btn.line{color:#f3efe4;background:transparent}.btn.line:hover{background:rgba(201,162,75,.14)}
+/* nav */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(5,8,15,.82);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,162,75,.25);transition:background .3s}
+header.solid{background:var(--black)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo{display:flex;align-items:center;gap:12px;color:#f3efe4;font:700 1.35rem var(--serif)}
+.logo svg{width:34px;height:34px;color:var(--gold)}.logo small{display:block;font:300 .72rem var(--sans);color:var(--gold2);line-height:1.2}
+.links{display:flex;gap:30px;list-style:none;padding:0}
+.links a{color:#d9d4c6;font-size:.98rem;padding:6px 0;border-bottom:1px solid transparent;transition:color .3s,border-color .3s}
+.links a:hover,.links a.on{color:var(--gold2);border-color:var(--gold)}
+.nav .btn{padding:10px 22px;font-size:.92rem}
+.burger{display:none;background:none;border:1px solid var(--gold);width:44px;height:44px;cursor:pointer;color:var(--gold)}
+.burger span{display:block;width:20px;height:2px;background:currentColor;margin:5px auto;transition:.3s}
+/* hero */
+.hero{background:radial-gradient(ellipse at 20% 30%,#14284a 0,var(--navy) 55%,var(--black) 100%);color:#f3efe4;min-height:calc(100vh - 78px);display:flex;align-items:center;position:relative;overflow:hidden;padding:90px 0}
+.hero .art{position:absolute;inset-block:0;inset-inline-start:-4%;width:min(620px,70%);opacity:.16;color:var(--gold);pointer-events:none}
+.hero .cols{position:absolute;inset-inline-end:0;bottom:0;width:46%;height:100%;opacity:.07;background:repeating-linear-gradient(90deg,var(--gold) 0 2px,transparent 2px 64px)}
+.hero .in{position:relative;max-width:780px}
+.hero .tag{display:inline-block;color:var(--gold2);border:1px solid rgba(201,162,75,.45);padding:5px 18px;font-size:.92rem;margin-bottom:28px}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5rem);margin-bottom:26px;animation:rise 1s .1s both}
+.hero h1 span{display:block;color:var(--gold2)}
+.hero p{font-size:1.2rem;color:#c8cfdc;max-width:56ch;margin-bottom:42px;animation:rise 1s .35s both}
+.hero .cta{display:flex;gap:16px;flex-wrap:wrap;animation:rise 1s .55s both}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+/* about */
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.pillars div{border-top:2px solid var(--gold);padding-top:14px}.pillars h3{font-size:1.35rem;color:var(--gold-t)}
+.pillars p{font-size:.95rem;color:var(--muted);line-height:1.7}
+.photo{aspect-ratio:4/5;background:linear-gradient(160deg,var(--navy2),var(--black));position:relative;border:1px solid var(--gold);outline:1px solid rgba(201,162,75,.35);outline-offset:14px;display:grid;place-items:center}
+.photo svg{width:78%;color:var(--gold);opacity:.9}
+.photo b{position:absolute;inset-inline-start:-1px;bottom:28px;background:var(--gold);color:var(--black);padding:10px 24px;font:700 1.05rem var(--serif)}
+/* services */
+.services{background:var(--surface)}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.card{background:var(--surface);padding:38px 28px;position:relative;transition:background .35s,color .35s}
+.card::before{content:"";position:absolute;inset-inline:0;top:0;height:3px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:transform .4s}
+.card:hover{background:var(--navy);color:#f3efe4}.card:hover::before{transform:scaleX(1)}
+.card i{display:block;width:14px;height:14px;background:var(--gold);transform:rotate(45deg);margin-bottom:26px}
+.card h3{font-size:1.4rem;margin-bottom:10px}.card p{font-size:.95rem;color:var(--muted);line-height:1.75}.card:hover p{color:#b9c2d3}
+.card a{display:inline-block;margin-top:16px;color:var(--gold-t);font-weight:500;font-size:.95rem}
+/* why */
+.why{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+.why ul{list-style:none;padding:0}
+.why li{display:grid;grid-template-columns:52px 1fr;gap:20px;padding:26px 0;border-bottom:1px solid var(--line)}
+.why li:first-child{padding-top:0}
+.why .ic{width:52px;height:52px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold-t);font:700 1.5rem var(--serif)}
+.why h3{font-size:1.4rem}.why li p{color:var(--muted);font-size:.97rem;line-height:1.75}
+/* team */
+.team{background:var(--navy);color:#f3efe4}.team .lead{color:#aab3c5}
+.grid3{display:grid;grid-template-columns:repeat(4,1fr);gap:26px}
+.lawyer{border:1px solid rgba(201,162,75,.25);background:var(--navy2);transition:transform .4s,border-color .4s}
+.lawyer:hover{transform:translateY(-8px);border-color:var(--gold)}
+.lawyer .av{aspect-ratio:1/1.05;background:linear-gradient(180deg,#16294a,var(--black));display:grid;place-items:end center;overflow:hidden}
+.lawyer .av svg{width:70%;color:#2c4268}
+.lawyer .tx{padding:22px;border-top:2px solid var(--gold)}
+.lawyer h3{font-size:1.3rem}.lawyer .t{color:var(--gold2);font-size:.92rem}.lawyer .s{color:#aab3c5;font-size:.9rem;margin-top:6px;line-height:1.6}
+/* stats */
+.stats{background:linear-gradient(120deg,var(--black),var(--navy));color:#f3efe4;padding:80px 0;border-block:1px solid rgba(201,162,75,.35)}
+.statg{display:grid;grid-template-columns:repeat(4,1fr);text-align:center}
+.statg div{padding:10px;border-inline-start:1px solid rgba(201,162,75,.25)}.statg div:first-child{border:0}
+.statg b{display:block;font:700 clamp(2.6rem,5vw,4rem) var(--serif);color:var(--gold2);line-height:1.2}
+.statg span{color:#b9c2d3}
+/* testimonials */
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.quote{background:var(--surface);border:1px solid var(--line);padding:38px 32px;position:relative}
+.quote::before{content:"”";position:absolute;top:-6px;inset-inline-end:26px;font:700 6rem/1 var(--serif);color:var(--gold);opacity:.55}
+.quote p{font-size:1.02rem;margin-bottom:24px}.quote b{display:block;font-family:var(--serif);font-size:1.2rem}.quote small{color:var(--muted)}
+/* contact */
+.contact{background:var(--surface)}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+form{display:grid;gap:18px}
+.f label{display:block;font-size:.95rem;margin-bottom:6px;font-weight:500}
+.f input,.f textarea{width:100%;padding:14px 16px;background:var(--bg);color:var(--text);border:1px solid var(--line);font:inherit;transition:border-color .3s,box-shadow .3s}
+.f input:focus,.f textarea:focus{outline:0;border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,162,75,.25)}
+.f textarea{min-height:140px;resize:vertical}
+.f .err{display:none;color:#c0392b;font-size:.87rem;margin-top:4px}
+.f.bad .err{display:block}.f.bad input,.f.bad textarea{border-color:#c0392b}
+.ok{display:none;padding:16px;border:1px solid var(--gold);color:var(--gold-t);background:rgba(201,162,75,.1)}
+.info{display:grid;gap:14px;margin-bottom:22px}
+.info div{padding:16px 20px;border-inline-start:3px solid var(--gold);background:var(--bg)}
+.info b{display:block;font-family:var(--serif);font-size:1.15rem}.info span,.info a{color:var(--muted);font-size:.97rem}
+.map{height:230px;background:linear-gradient(135deg,var(--navy2),var(--navy));border:1px solid var(--gold);display:grid;place-items:center;text-align:center;color:#f3efe4;position:relative;overflow:hidden}
+.map::before{content:"";position:absolute;inset:0;opacity:.18;background:linear-gradient(var(--gold) 1px,transparent 1px) 0 0/44px 44px,linear-gradient(90deg,var(--gold) 1px,transparent 1px) 0 0/44px 44px}
+.map>div{position:relative}.map .btn{margin-top:12px;padding:10px 24px}
+.pin{display:block;width:26px;height:26px;margin:0 auto 8px;background:var(--gold);border-radius:50% 50% 50% 0;transform:rotate(-45deg)}
+/* footer */
+footer{background:var(--black);color:#b9c2d3;padding:80px 0 0}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:44px;padding-bottom:56px}
+footer h3{color:var(--gold2);font-size:1.25rem;margin-bottom:16px}
+footer ul{list-style:none;padding:0;display:grid;gap:8px;font-size:.96rem}
+footer ul a:hover{color:var(--gold2)}
+.soc{display:flex;gap:10px;margin-top:18px}.soc a{border:1px solid rgba(201,162,75,.4);padding:6px 14px;font-size:.88rem;transition:.3s}.soc a:hover{background:var(--gold);color:var(--black)}
+.copy{border-top:1px solid rgba(201,162,75,.2);padding:22px 0;text-align:center;font-size:.9rem}
+.wa{position:fixed;inset-inline-start:22px;bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:55;display:flex;align-items:center;gap:8px;background:#25d366;color:#052e16;padding:12px 20px;font-weight:700;border-radius:40px;box-shadow:0 8px 24px rgba(0,0,0,.35);transition:transform .3s}
+.wa:hover{transform:scale(1.06)}.wa svg{width:22px;height:22px}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
+@media (max-width:1020px){.grid4,.grid3{grid-template-columns:repeat(2,1fr)}.tgrid{grid-template-columns:1fr}.fgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:860px){
+section{padding:78px 0}.about,.why,.cgrid{grid-template-columns:1fr;gap:44px}.photo{max-width:420px}
+.burger{display:block}.nav>.btn{display:none}
+.links{position:absolute;inset-inline:0;top:78px;flex-direction:column;gap:0;background:var(--black);border-bottom:1px solid var(--gold);max-height:0;overflow:hidden;transition:max-height .4s}
+.links.open{max-height:420px}.links a{display:block;padding:14px 24px;border:0}
+.statg{grid-template-columns:1fr 1fr;row-gap:30px}.statg div:nth-child(3){border:0}}
+@media (max-width:560px){body{font-size:16px}.grid4,.grid3,.fgrid{grid-template-columns:1fr}.pillars{grid-template-columns:1fr}.hero .btn{width:100%}.wa span{display:none}.wa{padding:14px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="scales" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M100 22v150M70 176h60M82 176c0-8 36-8 36 0M40 52h120M100 22a6 6 0 100 .1"/><path d="M40 52L16 112M40 52l24 60M160 52l-24 60M160 52l24 60M8 112h64M128 112h64"/><path d="M8 112c0 22 64 22 64 0M128 112c0 22 64 22 64 0"/></symbol>
+<symbol id="person" viewBox="0 0 100 100" fill="currentColor"><circle cx="50" cy="34" r="19"/><path d="M8 100c0-26 18-40 42-40s42 14 42 40z"/></symbol></defs></svg>
+
+<header id="top"><div class="wrap nav">
+<a class="logo" href="#home" aria-label="مكتب الميزان"><svg><use href="#scales"/></svg><span>مكتب الميزان<small>للمحاماة والاستشارات القانونية</small></span></a>
+<ul class="links" id="links">
+<li><a href="#home">الرئيسية</a></li><li><a href="#about">من نحن</a></li><li><a href="#services">خدماتنا</a></li><li><a href="#why">لماذا نحن</a></li><li><a href="#team">فريقنا</a></li><li><a href="#testimonials">آراء العملاء</a></li><li><a href="#contact">تواصل معنا</a></li></ul>
+<a class="btn gold" href="#contact">احجز استشارتك</a>
+<button class="burger" id="burger" aria-label="القائمة" aria-expanded="false"><span></span><span></span></button>
+</div></header>
+
+<main>
+<section class="hero" id="home">
+<svg class="art" viewBox="0 0 200 200"><use href="#scales"/></svg><div class="cols"></div>
+<div class="wrap"><div class="in">
+<span class="tag">محامون ومستشارون قانونيون منذ عام 2004</span>
+<h1>نحمي حقوقك.. <span>ونصنع لك طريق العدالة</span></h1>
+<p>مكتب الميزان للمحاماة فريق من المحامين أصحاب الخبرة في المحاكم بمختلف درجاتها، نقدّم لك رأياً قانونياً صريحاً ومتابعة دقيقة لكل خطوة في قضيتك، بسرية كاملة وبالتزام لا يتغير.</p>
+<div class="cta"><a class="btn gold" href="#contact">احجز استشارتك الآن</a><a class="btn line" href="#about">تعرف علينا</a></div>
+</div></div></section>
+
+<section id="about"><div class="wrap about">
+<div class="rv"><div class="head"><h2>خبرة تمتد لعقدين في ساحات القضاء</h2></div>
+<p class="lead">تأسس مكتب الميزان على قناعة بسيطة: العميل يستحق محامياً يستمع إليه جيداً، ويشرح له موقفه القانوني بوضوح، ويدافع عن مصلحته حتى النهاية. نخدم الأفراد والشركات والعائلات، ونتولى القضية من أول استشارة حتى صدور الحكم وتنفيذه.</p>
+<div class="pillars"><div><h3>رسالتنا</h3><p>تقديم خدمات قانونية دقيقة تحمي الحقوق وتُسهّل على الناس طريقهم إلى العدالة.</p></div>
+<div><h3>رؤيتنا</h3><p>أن نكون المكتب الأول الذي يلجأ إليه العملاء عند الحاجة إلى الثقة والكفاءة.</p></div>
+<div><h3>قيمنا</h3><p>النزاهة، والسرية، والالتزام بالمواعيد، والصدق مع العميل في كل مرحلة.</p></div></div></div>
+<div class="photo rv" role="img" aria-label="فريق مكتب الميزان"><svg viewBox="0 0 300 200" fill="currentColor"><use href="#person" x="20" y="60" width="80" height="80" opacity=".5"/><use href="#person" x="110" y="30" width="100" height="120"/><use href="#person" x="210" y="60" width="80" height="80" opacity=".5"/></svg><b>أكثر من 20 عاماً من الثقة</b></div>
+</div></section>
+
+<section class="services" id="services"><div class="wrap">
+<div class="head rv"><h2>خدماتنا القانونية</h2><p class="lead">نغطي المجالات القانونية الأكثر طلباً، ولكل مجال محامٍ متخصص يتابع قضيتك.</p></div>
+<div class="grid4 rv">
+<div class="card"><i></i><h3>القضايا الجنائية</h3><p>الدفاع أمام النيابة والمحاكم الجنائية، وإعداد المذكرات وتمثيل المتهمين والمجني عليهم.</p><a href="#contact">اطلب استشارة</a></div>
+<div class="card"><i></i><h3>القضايا المدنية</h3><p>المطالبات المالية، والمنازعات، ودعاوى التعويض وإثبات الحقوق وتنفيذ الأحكام.</p><a href="#contact">اطلب استشارة</a></div>
+<div class="card"><i></i><h3>القانون التجاري والشركات</h3><p>تسوية النزاعات التجارية، وعقود الشراكة، والإفلاس والتصفية وحوكمة الشركات.</p><a href="#contact">اطلب استشارة</a></div>
+<div class="card"><i></i><h3>قضايا الأسرة والأحوال الشخصية</h3><p>الزواج والطلاق والنفقة والحضانة والرؤية والميراث، بحساسية واحترام للخصوصية.</p><a href="#contact">اطلب استشارة</a></div>
+<div class="card"><i></i><h3>تأسيس الشركات والاستشارات القانونية</h3><p>اختيار الشكل القانوني المناسب، وإنهاء إجراءات التأسيس والتراخيص والسجلات.</p><a href="#contact">اطلب استشارة</a></div>
+<div class="card"><i></i><h3>صياغة العقود ومراجعتها</h3><p>عقود محكمة تحمي أطرافها، ومراجعة البنود الخطرة قبل التوقيع عليها.</p><a href="#contact">اطلب استشارة</a></div>
+<div class="card"><i></i><h3>القضايا العقارية</h3><p>البيع والإيجار والتسجيل ونزاعات الملكية وإزالة التعديات والتحقق من سلامة العقار.</p><a href="#contact">اطلب استشارة</a></div>
+<div class="card"><i></i><h3>قضايا العمل والتعويضات</h3><p>الفصل التعسفي، ومستحقات نهاية الخدمة، وإصابات العمل، وعقود العاملين.</p><a href="#contact">اطلب استشارة</a></div>
+</div></div></section>
+
+<section id="why"><div class="wrap why">
+<div class="rv"><div class="head"><h2>لماذا يختارنا عملاؤنا؟</h2></div><p class="lead">لا نَعِد بما لا نستطيع تحقيقه. نعدك بتقييم صادق لقضيتك، وخطة واضحة، وتواصل مستمر حتى تُغلق القضية.</p></div>
+<ul class="rv">
+<li><span class="ic">خ</span><div><h3>خبرة قانونية واحترافية</h3><p>محامون مقيدون أمام محاكم النقض والاستئناف، وتخصصات دقيقة لكل نوع من القضايا.</p></div></li>
+<li><span class="ic">س</span><div><h3>السرية التامة وحماية مصالح العملاء</h3><p>كل ما تخبرنا به محمي بسر المهنة، ولا يُطلع عليه أحد خارج فريق قضيتك.</p></div></li>
+<li><span class="ic">م</span><div><h3>متابعة دقيقة لجميع القضايا</h3><p>نخبرك بكل جلسة وكل مستجد، ويتوفر لك محامٍ مسؤول يرد على استفساراتك.</p></div></li>
+<li><span class="ic">ح</span><div><h3>حلول قانونية مبتكرة</h3><p>نبحث عن أقصر طريق قانوني لحقك، من التسوية الودية والتحكيم إلى التقاضي.</p></div></li>
+<li><span class="ic">ش</span><div><h3>الشفافية والمصداقية</h3><p>أتعاب متفق عليها كتابةً من البداية، وتقدير واقعي لفرص القضية دون مبالغة.</p></div></li></ul>
+</div></section>
+
+<section class="team" id="team"><div class="wrap">
+<div class="head rv"><h2>فريق المحامين</h2><p class="lead">نخبة من المحامين والمستشارين، يجمع بينهم الإعداد الجيد والانضباط في العمل.</p></div>
+<div class="grid3 rv">
+<article class="lawyer"><div class="av"><svg viewBox="0 0 100 100"><use href="#person"/></svg></div><div class="tx"><h3>أ. خالد عبد الرحمن</h3><div class="t">الشريك المؤسس</div><div class="s">القانون التجاري والشركات والتحكيم</div></div></article>
+<article class="lawyer"><div class="av"><svg viewBox="0 0 100 100"><use href="#person"/></svg></div><div class="tx"><h3>د. سارة المنصوري</h3><div class="t">شريك – رئيسة قسم الأسرة</div><div class="s">الأحوال الشخصية والميراث</div></div></article>
+<article class="lawyer"><div class="av"><svg viewBox="0 0 100 100"><use href="#person"/></svg></div><div class="tx"><h3>أ. محمود الفقي</h3><div class="t">محامٍ بالنقض</div><div class="s">القضايا الجنائية والجنح الاقتصادية</div></div></article>
+<article class="lawyer"><div class="av"><svg viewBox="0 0 100 100"><use href="#person"/></svg></div><div class="tx"><h3>أ. نور الهدى حسن</h3><div class="t">مستشار قانوني أول</div><div class="s">العقارات وصياغة العقود</div></div></article>
+</div></div></section>
+
+<section class="stats" aria-label="إنجازاتنا"><div class="wrap statg">
+<div><b data-n="20">0</b><span>سنة من الخبرة</span></div>
+<div><b data-n="3500">0</b><span>قضية ناجحة</span></div>
+<div><b data-n="2800">0</b><span>عميل راضٍ</span></div>
+<div><b data-n="25">0</b><span>محامياً ومستشاراً</span></div>
+</div></section>
+
+<section id="testimonials"><div class="wrap">
+<div class="head rv"><h2>ماذا يقول عملاؤنا</h2></div>
+<div class="tgrid rv">
+<figure class="quote"><p>تولّى المكتب نزاعاً تجارياً استمر سنتين، وبفضل المتابعة الدقيقة استرددنا حقوق الشركة كاملة. كانوا صريحين معنا منذ اللقاء الأول.</p><b>م. هشام الجندي</b><small>مدير شركة مقاولات</small></figure>
+<figure class="quote"><p>في قضية أسرية صعبة وجدتُ محامية تفهم الموقف وتحفظ الخصوصية. شرحت لي كل خطوة، فلم أشعر بالضياع أبداً.</p><b>منى عبد العزيز</b><small>موظفة</small></figure>
+<figure class="quote"><p>راجعوا عقد شراكتنا قبل التوقيع واكتشفوا بنوداً كانت ستكلفنا الكثير. استشارة واحدة وفّرت علينا خسارة كبيرة.</p><b>أحمد سالم</b><small>صاحب مشروع ناشئ</small></figure>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<div class="head rv"><h2>احجز استشارتك</h2><p class="lead">اكتب لنا ملخصاً لقضيتك وسيتواصل معك أحد محامينا خلال يوم عمل واحد.</p></div>
+<div class="cgrid rv">
+<form id="form" novalidate>
+<div class="f"><label for="n">الاسم الكامل</label><input id="n" name="n" autocomplete="name"><div class="err">اكتب اسمك الكامل (3 أحرف على الأقل).</div></div>
+<div class="f"><label for="p">رقم الهاتف</label><input id="p" name="p" type="tel" inputmode="tel" dir="ltr" style="text-align:right" autocomplete="tel"><div class="err">اكتب رقم هاتف صحيحاً من 8 إلى 15 رقماً.</div></div>
+<div class="f"><label for="e">البريد الإلكتروني</label><input id="e" name="e" type="email" dir="ltr" style="text-align:right" autocomplete="email"><div class="err">اكتب بريداً إلكترونياً صحيحاً، مثل name@example.com.</div></div>
+<div class="f"><label for="m">رسالتك</label><textarea id="m" name="m"></textarea><div class="err">اشرح استفسارك في 10 أحرف على الأقل.</div></div>
+<button class="btn gold" type="submit">أرسل الطلب</button>
+<div class="ok" id="ok" role="status">تم استلام طلبك. سنتصل بك خلال يوم عمل واحد.</div>
+</form>
+<div>
+<div class="info">
+<div><b>العنوان</b><span>برج الميزان، شارع الجمهورية، دمنهور، البحيرة</span></div>
+<div><b>مواعيد العمل</b><span>من السبت إلى الخميس: 9 صباحاً – 6 مساءً (الجمعة إجازة)</span></div>
+<div><b>الهاتف</b><a href="tel:+201000000000" dir="ltr">01000000000</a></div>
+<div><b>البريد الإلكتروني</b><a href="mailto:info@mizan-law.example">info@mizan-law.example</a></div></div>
+<div class="map"><div><span class="pin"></span>مكتب الميزان – دمنهور<br><a class="btn gold" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Damanhur+Beheira+Egypt">افتح الموقع في خرائط جوجل</a></div></div>
+</div></div></div></section>
+</main>
+
+<footer><div class="wrap fgrid">
+<div><a class="logo" href="#home"><svg><use href="#scales"/></svg><span>مكتب الميزان</span></a><p style="margin-top:16px;max-width:34ch">مكتب محاماة واستشارات قانونية يحمي الحقوق ويتابع القضايا بدقة وسرية منذ عام 2004.</p>
+<div class="soc"><a href="https://facebook.com" target="_blank" rel="noopener">فيسبوك</a><a href="https://linkedin.com" target="_blank" rel="noopener">لينكدإن</a><a href="https://x.com" target="_blank" rel="noopener">إكس</a></div></div>
+<div><h3>روابط سريعة</h3><ul><li><a href="#home">الرئيسية</a></li><li><a href="#about">من نحن</a></li><li><a href="#team">فريقنا</a></li><li><a href="#testimonials">آراء العملاء</a></li><li><a href="#contact">تواصل معنا</a></li></ul></div>
+<div><h3>خدماتنا</h3><ul><li><a href="#services">القضايا الجنائية</a></li><li><a href="#services">القضايا المدنية</a></li><li><a href="#services">القانون التجاري</a></li><li><a href="#services">الأحوال الشخصية</a></li><li><a href="#services">صياغة العقود</a></li></ul></div>
+<div><h3>تواصل</h3><ul><li><a href="tel:+201000000000" dir="ltr">01000000000</a></li><li><a href="mailto:info@mizan-law.example">info@mizan-law.example</a></li><li>دمنهور، البحيرة، مصر</li></ul></div>
+</div><div class="copy wrap">© 2026 مكتب الميزان للمحاماة والاستشارات القانونية. جميع الحقوق محفوظة.</div></footer>
+
+<a class="wa" target="_blank" rel="noopener" href="https://wa.me/201000000000?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%AD%D8%AC%D8%B2%20%D8%A7%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1%D8%A9%20%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A%D8%A9" aria-label="تواصل عبر واتساب"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.2 14.2c-.2.6-1.300 1.200-1.800 1.200-.5.1-1 .2-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.8 2c.1.2.1.300 0 .5l-.3.400-.4.500c-.1.100-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.200 1 2.100 1.300 2.400 1.500.3.100.5.100.6-.1l.9-1c.2-.3.400-.2.600-.1l1.900.9c.3.100.5.200.5.300.1.200.1.800-.1 1.400z"/></svg><span>واتساب</span></a>
+
+<script>
+(function(){
+var $=function(s,c){return(c||document).querySelector(s)},$$=function(s,c){return[].slice.call((c||document).querySelectorAll(s))};
+var hd=$("#top"),ln=$("#links"),bg=$("#burger");
+window.addEventListener("scroll",function(){hd.classList.toggle("solid",scrollY>60)},{passive:true});
+bg.addEventListener("click",function(){var o=ln.classList.toggle("open");bg.setAttribute("aria-expanded",o)});
+$$("a",ln).forEach(function(a){a.addEventListener("click",function(){ln.classList.remove("open");bg.setAttribute("aria-expanded","false")})});
+/* reveal + counters */
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.15});
+$$(".rv").forEach(function(el){io.observe(el)});
+var fmt=new Intl.NumberFormat("ar-EG");
+var co=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;co.unobserve(e.target);
+var el=e.target,t=+el.dataset.n,s=null;function f(ts){s=s||ts;var p=Math.min((ts-s)/1600,1);el.textContent=fmt.format(Math.round(t*(1-Math.pow(1-p,3))))+(p===1?"+":"");if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)})},{threshold:.5});
+$$("[data-n]").forEach(function(el){el.textContent=fmt.format(0);co.observe(el)});
+/* active link */
+var secs=$$("main section[id]"),as=$$("a",ln);
+var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)as.forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id)})})},{rootMargin:"-45% 0px -50% 0px"});
+secs.forEach(function(s){so.observe(s)});
+/* form */
+var fm=$("#form"),ok=$("#ok");
+var rules={n:function(v){return v.trim().length>=3},p:function(v){return/^[+]?[0-9\u0660-\u0669\s-]{8,15}$/.test(v.trim())},e:function(v){return/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim())},m:function(v){return v.trim().length>=10}};
+function chk(i){var good=rules[i.name](i.value);i.closest(".f").classList.toggle("bad",!good);i.setAttribute("aria-invalid",!good);return good}
+$$("input,textarea",fm).forEach(function(i){i.addEventListener("blur",function(){chk(i)});i.addEventListener("input",function(){if(i.closest(".f").classList.contains("bad"))chk(i)})});
+fm.addEventListener("submit",function(ev){ev.preventDefault();ok.style.display="none";
+var all=$$("input,textarea",fm).map(chk).every(Boolean);
+if(!all){var b=$(".bad input,.bad textarea",fm);if(b)b.focus();return}
+fm.reset();ok.style.display="block"});
+})();
+</script>
+</body>
+</html>
